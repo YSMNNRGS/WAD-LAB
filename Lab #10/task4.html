@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;">
+
+<img id="bulb" src="bulbOff.jpeg" width="150">
+
+<br><br>
+<button onclick="toggleBulb()">Switch Bulb</button>
+
+<script>
+function toggleBulb() {
+  let img = document.getElementById("bulb");
+  let value = img.getAttribute("src");   
+
+  if(value === "bulbOff.jpeg"){
+    img.setAttribute("src", "bulbOn.jpeg");   
+    img.setAttribute("width", "200");        
+  } 
+  else {
+    img.setAttribute("src", "bulbOff.jpeg");  
+    img.setAttribute("width", "150");        
+  }
+}
+</script>
+
+</body>
+</html>

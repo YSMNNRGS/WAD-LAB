@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ 
+    <!-- Dropdown -->
+<div class="dropdown">
+  <button>Menu ▼</button>
+  <div class="content">
+    <a href="#">Link1</a>
+    <a href="#">Link2</a>
+  </div>
+</div>
+
+<style>
+.dropdown {position:relative;
+  display:inline-block;
+}
+.content {display:none;position:absolute;background:#eee;}
+.dropdown:hover .content {display:block;}
+.content a {display:block;padding:5px;text-decoration:none;}
+.dropdown a:hover {
+    background-color: aqua;
+    color: #060606;
+}
+</style>
+
+
+<!-- Search bar -->
+    
+<input type="text" placeholder="Search...">
+<button>Go</button>
+<style>
+input {padding:5px;}
+button {padding:6px;background:#333;color:#fff;border:none;}
+
+</style>
+<br>
+<br>
+<br>
+
+<!-- Pagination -->
+<div class="pagination">
+  <a href="#">1</a> <a href="#" class="active">2</a> <a href="#">3</a>
+</div>
+
+<style>
+.pagination a {padding:5px 10px;border:1px solid #ccc;text-decoration:none;}
+.active {background:#333;color:#fff;}
+.pagination a:hover {
+   background-color:rgb(106, 20, 147);
+   color: #fff;
+}
+</style>
+<br>
+<br>
+<!-- Sidebar -->
+    <div class="sidebar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+</div>
+</style>
+<style>
+.sidebar {width:120px;
+    background:#71187e;
+    height:100vh;
+    padding:10px;
+}
+.sidebar a {color:#fff;
+    display:block;
+    margin:10px 0;
+    text-decoration:none;
+
+}
+.sidebar a:hover {background:#1d8dac;}
+.sidebar a:hover {
+    color: rgb(182, 62, 7);
+
+}
+
+</style>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2> Click Counter</h2>
+  <button onclick="countClick()">Click Me!</button>
+  <p id="display">You clicked 0 times</p>
+
+  <script>
+    let count = 0;
+    function countClick() {
+      count++;
+      document.getElementById("display").innerText = "You clicked " + count + " times";
+    }
+  </script>
+</body>
+</html>
+
+<!-- (On key up) -->
+
+<!DOCTYPE html>
+<html>
+<body>
+  <h2> Live Typing</h2>
+  <input type="text" id="nameBox" placeholder="Type your name..." />
+  <p id="output"></p>
+
+  <script>
+    document.getElementById("nameBox").onkeyup = function() {
+      document.getElementById("output").innerText = "Hello, " + this.value;
+    };
+  </script>
+</body>
+</html>
+
+<!-- (this = current element). -->
+<!-- Double click: -->
+
+<!DOCTYPE html>
+<html>
+<body>
+  <h2> Double Click to Hide Text</h2>
+  <p ondblclick="this.style.display='none'">Double-click me to hide!</p>
+</body>
+</html>
+
+
+
+<!-- Onmouseover & Onmouseout: -->
+<!--  -->
+<!DOCTYPE html>
+<html>
+<body>
+  <h2> Growing Button</h2>
+  <button id="growBtn">Hover me!</button>
+
+  <script>
+    const btn = document.getElementById("growBtn");
+    btn.onmouseover = function() {
+      btn.style.transform = "scale(1.5)";
+      btn.style.transition = "0.3s";
+    };
+    btn.onmouseout = function() {
+      btn.style.transform = "scale(1)";
+    };
+  </script>
+</body>
+</html>
+
+<!--  -->
+<!-- Keydown & key out: -->
+
+<!DOCTYPE html>
+<html>
+<body>
+  <h2> Key Press Detector</h2>
+  <p>Press any key on your keyboard...</p>
+  <p id="keyOut"></p>
+
+  <script>
+    document.addEventListener("keydown", function(event) {
+      document.getElementById("keyOut").innerText = 
+        "You pressed: " + event.key;
+    });
+  </script>
+</body>
+</html>
+
+

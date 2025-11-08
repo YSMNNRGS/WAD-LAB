@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 </title>
+</head>
+<body>
+  <div class="navbar">
+    <h2>Earth Action Network</h2>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <h1>About US</h1>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fdf6ec; 
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .navbar {
+      background-color: #1e3a5f; 
+      color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      padding: 12px 10px;
+      position: relative;
+    }
+    h1 {
+      color: #1e3a5f; 
+      text-align: center;
+      margin: 20px 0;
+    }
+    .navbar a {
+      color: #fdf6ec; 
+      text-decoration: none;
+      padding: 8px 15px;
+      font-size: 17px;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+
+    .navbar a:hover {
+      color: #1e3a5f; 
+      background-color: #f4c542;
+      transform: scale(1.05);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      justify-content: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background-color: aquamarine;
+      box-shadow: 0 6px 15px rgba(9, 85, 166, 0.3);
+    }
+  </style>
+  <div class="card-container">
+    <div class="card" style="width: 18rem;">
+      <img src="1.png" class="card-img-top" alt="Earth Day">
+      <div class="card-body">
+        <p class="card-text">Earth Day reminds us that together, we can protect our planet for future generations.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="2.png" class="card-img-top" alt="Tree Planting">
+      <div class="card-body">
+        <p class="card-text">Every tree planted is a promise for a greener, healthier tomorrow.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="7.png" class="card-img-top" alt="responsibility">
+      <div class="card-body">
+        <p class="card-text">Protecting the earth is a responsibility for all the human being around the world.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="8.png" class="card-img-top" alt="shared-right">
+      <div class="card-body">
+        <p class="card-text">Every human has the right to access clean air, water, and environment.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="9.png" class="card-img-top" alt="Call-to-action">
+      <div class="card-body">
+        <p class="card-text">Before seeing irreversable harms and issues, we must act to protect our planet.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

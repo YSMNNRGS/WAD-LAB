@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-size;
+    background-color: beige;
+
+}
+
+#note{
+color: red;
+background-color: aqua;
+position: absolute;
+
+}
+
+.title{
+    color: red;
+    padding: 10px;
+    margin: 40px auto;
+    display: grid;
+    border: 1px solid pink;
+    grid-template-columns: auto auto auto auto;
+    position: center;
+   text-align: center;
+    border-width: 2px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background: rgpa(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);;
+    /* width: 80px; */
+    align-items: center;
+    
+}
+
+.button{
+    background-color: aqua;
+    border: 2px solid pink;
+    /* padding-top: 20px; */
+    border-radius:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.34 ease;
+    margin: 55px auto;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.42 ease;
+}
+.button:hover{
+    background-color: pink;
+    color: black;
+    transform: scale(1.05);
+}
+
+.button:active {
+  background-color: rgb(0, 200, 180);              /* darker aqua */
+  transform: scale(0.95);                          /* press effect */
+}
+
+
+
+.NOO{
+border: 2px solid green;
+width: 30px;
+height: 42px;
+transition: transform 0.5 ease;
+}
+
+.NOO:hover{
+    transform: rotate(45deg) scale(1.3) translateX(30PX);
+    background-color: blue;
+    color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bounceUP {
+    0% {transform: translateY(0);}
+    50% {transform: translateX(-40PX);}
+    100% {transform: transalte(0);}
+}
+
+.ball{
+    animation-name:bounceUP;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}

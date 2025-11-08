@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="s.css">
+</head>
+<body>
+  <h1 class="title">Student Scores</h1>
+  <p id="note">Enter your scores below</p>
+  <div class="title">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+</div>
+
+<div class="button">
+  <button class="button">submit</button>
+</div>
+
+  <div class="no">
+ <button class="no">No</button>
+</div>
+
+  <div class="box">
+    <input type="text" placeholder="Enter score">
+    <button>Submit</button>
+  </div>
+
+<div class="NOO">Transform Me</div>
+
+<div class="ball">Transform Me2</div>
+
+
+<button onclick="changeText()">Click</button>
+<script>
+  function changeText(){ alert("Clicked!"); }
+</script>
+  
+
+<button class="grow">Hover Me</button>
+
+<style>
+.grow {
+  background: blue;
+  color: white;
+  padding: 10px 25px;
+  border: 2px solid red;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+.grow:hover {
+  background: green;
+  transform: scale(1.2);
+}
+</style>
+
+</body>
+</html>
