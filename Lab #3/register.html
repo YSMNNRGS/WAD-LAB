@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TechHub Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Register</h1>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-intro">
+      <h2>Create your account</h2>
+      <p>Fill in the details below to set up your TechHub account:</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="form-container">
+      <h2>Sign up page</h2>
+      <form action="#" method="post">
+        <legend>Register on TechHub</legend>
+
+        <div class="input-group">
+          <label for="fullName">Full name:</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Full Name" required>
+          <label for="regEmail">Email:</label>
+          <input id="regEmail" name="regEmail" type="email" placeholder="you@example.com" required>
+          <label for="regPassword">Password:</label>
+          <input id="regPassword" name="regPassword" type="password" placeholder="***********" required>
+          <label for="confirmPassword">Repeat password:</label>
+          <input id="confirmPassword" name="confirmPassword" type="password" placeholder="***********" required>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="terms" required>
+            <p>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Create account</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="footer">
+      <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+    </div>
+  </section>
+</body>
+</html>

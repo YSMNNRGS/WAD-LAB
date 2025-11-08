@@ -1,0 +1,79 @@
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+
+.site-header {
+  background: #2b91a8;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+  padding: 20px;
+}
+.site-header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+}
+.logo {
+  width: 80px;
+  height: auto;
+  justify-self: center;
+}
+
+/* Main layout */
+.site-main {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  gap: 0;
+  padding: 20px;
+}
+
+/* Left sidebar */
+.left {
+  background: #eee;
+  padding: 15px;
+}
+.left h3 { margin-top: 0; }
+.left a { color: blue; text-decoration: none; }
+.left a:hover { text-decoration: underline; }
+
+/* Center content */
+.center {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.center h2 { margin-top: 0; }
+
+/* Right column */
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Footer space (like ~7 line breaks) */
+.footer-space {
+  height: 140px; /* about 7 lines worth */
+}
+
+.site-footer {
+  background: #2b91a8;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+.site-footer p {
+  margin: 0;
+}
