@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main>
+    <h1>Registration</h1>
+    <nav>
+      <a href="Task1_AND_Task2.html">Home</a>
+      <a href="Task3-Login.html">Login</a>
+      <a href="Task4-Seasons.html">Seasons</a>
+    </nav>
+
+    <form action="login.html" method="get">
+      <label for="fullname">Full Name:</label><br>
+      <input id="fullname" name="fullname" type="text" placeholder="Your full name" required><br><br>
+
+      <label for="username">Username:</label><br>
+      <input id="username" name="username" type="text" minlength="3" placeholder="username" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required><br><br>
+
+      <label for="pass">Password:</label><br>
+      <input id="pass" name="pass" type="password" minlength="8" placeholder="••••••" required><br><br>
+
+      <label for="cpass">Confirm Password:</label><br>
+      <input id="cpass" name="cpass" type="password" minlength="8" placeholder="••••••" required><br><br>
+
+      <label>
+        <input type="checkbox" required>
+        I agree to the Terms
+      </label><br><br>
+
+      <input type="submit" value="Create Account">
+    </form>
+
+    <p class="small">Already have an account? <a href="Task3-Login.html">Go to Login</a>.</p>
+  </main>
+</body>
+</html>

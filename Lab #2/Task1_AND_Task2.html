@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WAD Lab 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Task 01 -->
+    <section id="task01">
+      <h2>Task #1 </h2>
+<p>Design a simple form that consists of following fields: <br>
+1.	2 Input fields for your “First Name” & “Last Name”. <br>
+2.	Read only field that contains your city and make it required. <br>
+3.	Input field for zip code and restrict field length to 4. <br>
+4.	Field for taking your date of birth. <br>
+5.	Input field with type “submit”. <br>
+</p>
+            <label for="first"><strong>First Name: </strong></label>
+            <input id="first" name="first" type="text" placeholder="First name" required>
+              <br>
+            <label for="last"><strong>\Last Name: </strong></label>
+            <input id="last" name="last" type="text" placeholder="Last name" required>
+            <br>
+            <label for="city"><strong>City: </strong></label>
+            <input id="city" name="city" type="text" value="Islamabad" readonly required>
+            <br>
+          <label for="zip"><strong>ZIP (4 digits): </strong></label>
+          <input id="zip" name="zip" type="text" inputmode="numeric" pattern="\\d{4}" maxlength="4" placeholder="1234" required>
+     <br>
+          <label for="dob"><strong>Date of Birth: </strong></label>
+          <input id="dob" name="dob" type="date" required>
+          <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <!-- Task 02 -->
+<section id="task 02">
+  <h2>Task #2 Students Academic Record</h2>
+  <table style="width: 67%;" border="1">
+    <tr>
+      <th>No</th>
+      <th>Student</th>
+      <th>Subject</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Maryam </td>
+      <td>Mathematics</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Robina</td>
+      <td>Physics</td>
+      <td>B+</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Fatima Noor</td>
+      <td>Chemistry</td>
+      <td>A-</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Husnia</td>
+      <td>English</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Zarafshan</td>
+      <td>Computer Science</td>
+      <td>A</td>
+    </tr>
+  </table>
+  <br>
+</section>
+
+
+
+</body>
+</html>
