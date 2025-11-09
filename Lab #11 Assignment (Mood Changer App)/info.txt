@@ -1,0 +1,2 @@
+## A simple mood changer App. 
+You can select your mood from dropdowm menu and see a relevent emoji and color to the mood. 
